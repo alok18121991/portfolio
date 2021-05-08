@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header';
+import Welcome from './components/welcomePage/welcome';
+import Experience from './components/experienceView/experience';
 
 function App() {
   return (
     <div className="App">
+       <Header/>
+       <Welcome/>
+       <Experience/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +24,9 @@ function App() {
           Learn React
         </a>
       </header>
+     
     </div>
+    
   );
 }
 
