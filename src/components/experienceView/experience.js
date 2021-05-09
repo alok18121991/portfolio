@@ -1,11 +1,19 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
-class Experience extends React.Component{
-    render(){
+class Experience extends React.Component {
+    render() {
         return (
-            <h2>Experience</h2>
+
+            <div className="App-header bg-dark">
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+                <h2>Experience</h2>
+            </div>
+
         )
     }
-} 
+}
 
 export default Experience;
