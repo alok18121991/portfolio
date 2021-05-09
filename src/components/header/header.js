@@ -3,6 +3,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -17,12 +18,11 @@ class Header extends React.Component {
     render() {
 
         return (
-            <Navbar bg="dark" variant="dark" className="fixed-top px-5">
-                <Navbar.Brand href="/">Alok Kumar Singh</Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse>
-                    {console.log("herre.. ", this.state.activeKey)}
-                    <Nav className="justify-content-end" style={{ width: "100%" }}
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="fixed-top px-5">
+                <Navbar.Brand as={Link} to="/home">Alok Kumar Singh</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav"> 
+                    <Nav className="justify-content-end mr-auto" style={{ width: "100%" }}
                         activeKey={`${this.state.activeKey}`}
                         onSelect={(selectedKey) => this.updateActiveKey(selectedKey)
                         }
