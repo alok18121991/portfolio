@@ -21,3 +21,16 @@ code {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
 }
+
+.svg_icon{
+  /* padding-top: 0.4rem;
+  padding-left: 1rem; */
+  fill: rgba(255,255,255,.55);
+}
+
+.svg_icon:hover{
+  /* padding-top: 0.4rem;
+  padding-left: 1rem; */
+  fill: rgba(255, 255, 255, 0.938);
+  cursor: pointer;
+}

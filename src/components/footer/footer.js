@@ -1,13 +1,14 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
 
-class Footer extends React.Component{
-    render(){
+class Footer extends React.Component {
+    render() {
         return (
-            <div className="bg-dark fixed-bottom">
-                <p style={{ color: 'white' }}>Footer</p>
-            </div>
+            <Navbar sticky="top" >
+                <p style={{ color: 'gray' }}>Footer</p>
+            </Navbar>
         )
     }
-} 
+}
 
 export default Footer;

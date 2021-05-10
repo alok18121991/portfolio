@@ -6,16 +6,19 @@ import Projects from './components/projectView/projectView';
 import Skills from './components/skillsView/skillsView';
 import Contact from './components/contactView/contactView';
 import Footer from './components/footer/footer';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App p-2 bg-dark" >
-      <BrowserRouter>
-      <Header />
+      <BrowserRouter basename="/portfolio">
+        <Header />
         <Switch>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
           <Route path="/home">
-            <Welcome/>
+            <Welcome />
           </Route>
           <Route path="/experience">
             <Experience />
@@ -30,7 +33,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      <Footer />
+        <Footer />
       </BrowserRouter>
     </div>
 
