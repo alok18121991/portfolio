@@ -6,14 +6,43 @@ import Projects from './components/projectView/projectView';
 import Skills from './components/skillsView/skillsView';
 import Contact from './components/contactView/contactView';
 import Footer from './components/footer/footer';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Transition, TransitionGroup } from 'react-transition-group';
+import { exit, play } from './components/timelines';
+import { Component } from 'react';
 
-function App() {
+class App extends Component{
+  render(){
   return (
     <div className="App p-2 bg-dark" >
       <BrowserRouter basename="/portfolio">
         <Header />
-        <Switch>
+        <Route render={({ location }) => {
+          const { pathname, key } = location;
+          {console.log("fdsfsf.... ", pathname, key)}
+      return (
+        <TransitionGroup component={null}>
+        <Transition
+          key={key}
+          appear={true}
+          onEnter={(node, appears) => play(pathname, node, appears)}
+          onExit={(node, appears) => exit(node, appears)}
+          timeout={{enter: 750, exit: 150}}
+        >
+        <Switch location={location}>
+          <Route exact path="/" component={Welcome}/>
+          <Route path="/home" component={Welcome}/>
+          <Route path="/experience" component={Experience} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+       </Transition>
+       </TransitionGroup>
+      )}
+      }
+    />
+        {/* <Switch>
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
@@ -32,12 +61,13 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-        </Switch>
+        </Switch> */}
         <Footer />
       </BrowserRouter>
     </div>
 
   );
+}
 }
 
 export default App;
