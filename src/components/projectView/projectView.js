@@ -1,16 +1,18 @@
 import React from 'react';
 
-class Projects extends React.Component{
-    render(){
+class Projects extends React.Component {
+    render() {
         return (
             <div className="App-header bg-dark">
-                <h2>Projects</h2>
-                <h2>Projects</h2>
-                <h2>Projects</h2>
-                <h2>Projects</h2>
+                <div className="content">
+                    <h2>Projects</h2>
+                    <h2>Projects</h2>
+                    <h2>Projects</h2>
+                    <h2>Projects</h2>
+                </div>
             </div>
         )
     }
-} 
+}
 
 export default Projects;

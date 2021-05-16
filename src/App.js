@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/header/header';
-import Welcome from './components/welcomePage/welcome';
+import Welcome from './components/welcomePage/';
 import Experience from './components/experienceView/experience';
 import Projects from './components/projectView/projectView';
 import Skills from './components/skillsView/skillsView';

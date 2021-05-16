@@ -4,13 +4,16 @@ import { TimelineMax as Timeline, Power1 } from 'gsap';
 const getDefaultTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
   const content = node.querySelectorAll('h2');
-  console.log("contecttt..... ", content)
+  // console.log("contecttt..... ", content)
+  content.forEach(element => {
+    // console.log("..... ", element)
+    timeline.fromTo(element, 0.2, {  autoAlpha: 0, delay, ease: Power1.easeIn }, {  autoAlpha: 1, ease: Power1.easeOut });
+    });
 //   const contentInner = node.querySelector('.content--inner');
 
-  timeline
-    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-    .from(content, 0.15, { autoAlpha: 0, y: 25, ease: Power1.easeInOut });
-    // .from(contentInner, 0.15, { autoAlpha: 0, delay: 0.15, ease: Power1.easeIn });
+  // timeline
+  //   .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
+  //   .staggerFrom(content, 0.15, { autoAlpha: 0, y: 25, ease: Power1.easeOut });
 
   return timeline;
 }
@@ -21,7 +24,7 @@ const getHomeTimeline = (node, delay) => {
     console.log("texts..." , texts);
      timeline
     .from(node, 0, { display: 'none', autoAlpha: 0, delay })
-    .staggerFrom(texts, 0.375, { autoAlpha: 0, x: -25, ease: Power1.easeOut }, 0.125);
+    .staggerFrom(texts, 0.5, { autoAlpha: 0, x: -200, ease: Power1.easeOut }, 0.125);
 
   return timeline;
 }
@@ -31,18 +34,17 @@ export const play = (pathname, node, appears) => {
   let timeline
     console.log("rterte .... " , node);
     console.log("rterte ....33 " , pathname);
-  if (pathname === '/')
+  if (pathname === '/' || pathname === '/home' )
     timeline = getHomeTimeline(node, delay);
   else
     timeline = getDefaultTimeline(node, delay);
 
     timeline.play();
 
-   console.log("winnn..... ", window)
+  //  console.log("winnn..... ", window)
    window.loadPromise = new Promise(resolve => {
     requestAnimationFrame(() => timeline.play())
     })
-    // window.loadPromise.then(() => requestAnimationFrame(() => timeline.play()))
 }
 
 export const exit = (node) => {
