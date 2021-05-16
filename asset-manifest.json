@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3de282a1.chunk.css",
-    "main.js": "/portfolio/static/js/main.78b63d59.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.78b63d59.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.3a4028d9.chunk.css",
+    "main.js": "/portfolio/static/js/main.c334e233.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c334e233.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.46585013.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.46585013.js.map",
     "static/css/2.800be05e.chunk.css": "/portfolio/static/css/2.800be05e.chunk.css",
@@ -12,14 +12,25 @@
     "static/js/3.49cf78f9.chunk.js.map": "/portfolio/static/js/3.49cf78f9.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.800be05e.chunk.css.map": "/portfolio/static/css/2.800be05e.chunk.css.map",
-    "static/css/main.3de282a1.chunk.css.map": "/portfolio/static/css/main.3de282a1.chunk.css.map",
-    "static/js/2.febce709.chunk.js.LICENSE.txt": "/portfolio/static/js/2.febce709.chunk.js.LICENSE.txt"
+    "static/css/main.3a4028d9.chunk.css.map": "/portfolio/static/css/main.3a4028d9.chunk.css.map",
+    "static/js/2.febce709.chunk.js.LICENSE.txt": "/portfolio/static/js/2.febce709.chunk.js.LICENSE.txt",
+    "static/media/code.eca87b6c.svg": "/portfolio/static/media/code.eca87b6c.svg",
+    "static/media/cssLogo.60a6c50d.svg": "/portfolio/static/media/cssLogo.60a6c50d.svg",
+    "static/media/db.ccbe954c.svg": "/portfolio/static/media/db.ccbe954c.svg",
+    "static/media/framework.47e61f76.svg": "/portfolio/static/media/framework.47e61f76.svg",
+    "static/media/htmlLogo.e7638e36.svg": "/portfolio/static/media/htmlLogo.e7638e36.svg",
+    "static/media/java.db5a80f3.svg": "/portfolio/static/media/java.db5a80f3.svg",
+    "static/media/javascript.7f3c55f6.svg": "/portfolio/static/media/javascript.7f3c55f6.svg",
+    "static/media/mongo.0368dd10.svg": "/portfolio/static/media/mongo.0368dd10.svg",
+    "static/media/mssql.2b14e66f.svg": "/portfolio/static/media/mssql.2b14e66f.svg",
+    "static/media/mysql.43de11b6.svg": "/portfolio/static/media/mysql.43de11b6.svg",
+    "static/media/tools.deb0d020.svg": "/portfolio/static/media/tools.deb0d020.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.46585013.js",
     "static/css/2.800be05e.chunk.css",
     "static/js/2.febce709.chunk.js",
-    "static/css/main.3de282a1.chunk.css",
-    "static/js/main.78b63d59.chunk.js"
+    "static/css/main.3a4028d9.chunk.css",
+    "static/js/main.c334e233.chunk.js"
   ]
 }
