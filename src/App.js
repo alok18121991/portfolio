@@ -19,7 +19,7 @@ class App extends Component{
         <Header />
         <Route render={({ location }) => {
           const { pathname, key } = location;
-          {console.log("fdsfsf.... ", pathname, key)}
+          // {console.log("fdsfsf.... ", pathname, key)}
       return (
         <TransitionGroup component={null}>
         <Transition

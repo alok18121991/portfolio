@@ -49,9 +49,22 @@ code {
   flex-direction: row;
   color: rgba(136, 135, 135, 0.938)
 } */
-
+.skillSet{
+  margin-top: 2rem !important;
+  margin-bottom: 3rem;
+}
+.skill-head{
+  color:  rgb(33, 37, 41);
+  text-align: left;
+  border-bottom: 1px solid rgb(33, 37, 41);
+}
+.skill-head span img{
+  width: 3rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
 .skill{
-  margin: 1rem 1rem;
+  margin: 2rem 3rem 2rem 0;
   background-color: rgb(33, 37, 41);
   box-shadow:
   0 0.6px 2px rgba(0, 0, 0, 0.112),
@@ -67,6 +80,14 @@ code {
   text-align: center;
 
 }
+
+.skillSet .skill:last-of-type{
+  margin-right: 0rem;
+}
+
+/* .skillSet .skill:first-of-type{
+  margin-left: 0rem;
+} */
 
 .square-box{
   position: relative;
@@ -96,4 +117,8 @@ code {
   text-align: center;
   vertical-align: middle;
   color: white
+}
+.square-content span img{
+  height: 4rem;
+  margin-bottom: 1rem;
 }
