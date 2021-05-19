@@ -17,7 +17,7 @@ class Welcome extends React.Component {
                     <div className="half-dark"></div>
                     <div className="half-light"></div>
                 </div>
-                <div class="photo-container" onMouseMove={(e) => callParallaxMethod(e)}>
+                <div class="photo-container" onMouseMove={(e) => callParallaxMethod(e)} onTouchMove={(e) => callParallaxMethod(e)}>
                     <div class="container2 pt-5">
                         <img src={triGlow} id="triGlow" className="img1" />
                         <img src={port} id="portrait-img" className="img2" />

@@ -28,19 +28,7 @@
     height: 45rem;
     z-index: 2;
 }
-
-/* .parallax {
-    background-image: url('img_parallax.jpg');
-  
-    height: 100%; 
-  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
-
-  .a {padding:100px;}
+.a {padding:100px;}
 .container2 { 
     position:relative; 
 }
@@ -48,6 +36,8 @@
   .imgB1 { position:absolute; top: 70px; left: 100px; z-index: 3; } 
 
 .photo-container{
+    margin-top: 3rem;
+    margin-left: 4rem;
     position:absolute; 
     top:0;
 }
