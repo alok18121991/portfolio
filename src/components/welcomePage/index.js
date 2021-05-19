@@ -1,25 +1,29 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import './index.css';
+import port from '../../images/port_test.png'
+import triGlow from '../../images/triGlow.png'
+import { Power2, TweenMax } from 'gsap';
+import callParallax from './parallax.js';
 
 class Welcome extends React.Component {
     render() {
+        let callParallaxMethod = function (e) {
+            callParallax(e, 'photo-container', 'img1', 'img2');
+        }
         return (
-            <div className="content">
-                <Container fluid className='vert-align'>
-                    <div className="App-header bg-dark border-top border-white" >
-                        <Row className="p-5 w-50">
-                            <Col>
-                                <Image src="https://avatarfiles.alphacoders.com/812/thumb-1920-81215.png" roundedCircle className="profile_image border border-4 border-white" />
-                            </Col>
-                            <Col>
-                                <div className="pt-5">
-                                    <h2>I AM A DEVELOPER</h2>
-                                </div>
-                            </Col>
-                        </Row>
-                        
+            <div className="welcome-content">
+                <div class="container2 rel-container">
+                    <div className="half-dark"></div>
+                    <div className="half-light"></div>
+                </div>
+                <div class="photo-container" onMouseMove={(e) => callParallaxMethod(e)}>
+                    <div class="container2 pt-5">
+                        <img src={triGlow} id="triGlow" className="img1" />
+                        <img src={port} id="portrait-img" className="img2" />
                     </div>
-                </Container>
+                </div>
+                <h1>HELLO WORLD</h1>
             </div>
         )
     }

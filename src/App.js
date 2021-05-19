@@ -6,20 +6,30 @@ import Projects from './components/projectView/projectView';
 import Skills from './components/skillsView/skillsView';
 import Contact from './components/contactView/contactView';
 import Footer from './components/footer/footer';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import { exit, play } from './components/timelines';
 import { Component } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 
 class App extends Component{
   render(){
   return (
     <div className="App p-2 bg-dark" >
-      <BrowserRouter basename="/portfolio">
+      <Router basename="/portfolio">
         <Header />
+       
+          {/* <ScrollToTop/>
+          <Switch >
+          <Route exact path="/" component={Welcome}/>
+          <Route path="/home" component={Welcome}/>
+          <Route path="/experience" component={Experience} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/contact" component={Contact} />
+        </Switch> */}
         <Route render={({ location }) => {
           const { pathname, key } = location;
-          // {console.log("fdsfsf.... ", pathname, key)}
       return (
         <TransitionGroup component={null}>
         <Transition
@@ -63,7 +73,9 @@ class App extends Component{
           </Route>
         </Switch> */}
         <Footer />
-      </BrowserRouter>
+        
+      </Router>
+      
     </div>
 
   );

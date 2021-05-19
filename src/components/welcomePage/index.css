@@ -1,3 +1,53 @@
+.welcome-content{
+    height: 100vh;
+    /* display: flex; */
+    /* background-color: rgba(0, 0, 0, 0.527); */
+  }
+.half-dark{
+    position: relative;;
+    height:300px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.half-light{
+    position:absolute;
+    height:50%;
+    width:100%;
+    background-color: #f8f9fa;
+}
 .profile_image{
     height: 150px;
+}
+#triGlow{
+    position:absolute;
+    height: 30rem;
+
+}
+#portrait-img{
+    position: absolute;
+    height: 45rem;
+    z-index: 2;
+}
+
+/* .parallax {
+    background-image: url('img_parallax.jpg');
+  
+    height: 100%; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+  .a {padding:100px;}
+.container2 { 
+    position:relative; 
+}
+  .imgA1 { position:absolute; top: 0px; left: 0px; z-index: 1; } 
+  .imgB1 { position:absolute; top: 70px; left: 100px; z-index: 3; } 
+
+.photo-container{
+    position:absolute; 
+    top:0;
 }

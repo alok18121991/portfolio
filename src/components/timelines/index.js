@@ -22,6 +22,8 @@ const getHomeTimeline = (node, delay) => {
 }
 
 export const play = (pathname, node, appears) => {
+
+  console.log("nodeeee..... ", node);
   const delay = appears ? 0 : 0;
   let timeline
   if (pathname === '/' || pathname === '/home' )
@@ -38,7 +40,7 @@ export const play = (pathname, node, appears) => {
 
 export const exit = (node) => {
   const timeline = new Timeline({ paused: true });
-
+  
   timeline.to(node, 0.15, { autoAlpha: 0, ease: Power1.easeOut });
   timeline.play();
 }

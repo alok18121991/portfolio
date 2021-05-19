@@ -28,10 +28,10 @@ class Header extends React.Component {
                         }
                     >
                         <Nav.Item>
-                            <Nav.Link as={Link} eventKey={"/home"} to="/home">Home</Nav.Link>
+                            <Nav.Link as={Link} eventKey={"/home"} to="/home" spy={true}>Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} eventKey={"/experience"} to="/experience">Experience</Nav.Link>
+                            <Nav.Link as={Link} eventKey={"/experience"} to="/experience" spy={true}>Experience</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link as={Link} eventKey={"/projects"} to="/projects">Projects</Nav.Link>

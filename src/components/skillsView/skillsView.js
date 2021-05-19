@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import coding from '../../svg/code.svg'
 import db from '../../svg/db.svg'
 import framework from '../../svg/framework.svg'
